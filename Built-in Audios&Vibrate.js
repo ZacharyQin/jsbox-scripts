@@ -649,6 +649,7 @@ var audioTable = [
         },
         longPressed: function(sender) {
           let index = sender.sender.id;
+          $device.taptic(1);
           $ui.alert({
             title: '"' + audioTable[index]["File name"] + '"',
             message: "需要复制么？",
