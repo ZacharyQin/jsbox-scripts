@@ -691,7 +691,7 @@ var audioTable = [
         make.centerX.equalTo(view.super.center);
         make.height.equalTo(60);
         make.top.inset(y);
-        make.left.right.inset(10);
+        make.width.equalTo(0.95*$device.info["screen"]["width"]);
       },
       views: [
         {
