@@ -670,12 +670,12 @@ var audioTable = [
               },
               {
                 title:
-                  '" $audio.play(id:' +
+                  '" $audio.play({id:' +
                   audioTable[index]["SystemSoundID"] +
-                  ';)"',
+                  '});"',
                 handler: function() {
                   $clipboard.text =
-                    "$audio.play(id:" + audioTable[index]["SystemSoundID"] + ";)";
+                    "$audio.play({id:" + audioTable[index]["SystemSoundID"] + "});";
                   $ui.toast("Copied!");
                 }
               },
